@@ -1,0 +1,37 @@
+@charset "utf-8";
+* {
+  box-sizing: border-box;
+}
+
+html,
+body {
+  overflow: hidden;
+  height: 100%;
+  width: 100%;
+  margin: 0;
+}
+
+body {
+  background-color: #fbfbfb;
+}
+
+a {
+  text-decoration: none;
+}
+
+@media print {
+  #canvas {
+    display: none;
+  }
+}
+
+#canvas {
+  /* display: none; */
+  background-color: chartreuse;
+  /* background-color: rgba(251, 251, 251, 1); */
+  position: absolute;
+  width: 120mm;
+  height: 25mm;
+  z-index: 2;
+  image-rendering: pixelated;
+}
